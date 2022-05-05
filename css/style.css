@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.header{
+    border: 1px solid #755B3E;
+    display:flex;
+    justify-content:space-around;
+}
+
+.img-header{
+    max-width: 100px;
+}
+
+.nav-header{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   color: #755B3E;
+}
+
+.nav-header a{
+padding: 10px;
+display: flex;
+justify-content: center;
+align-self: center;
+}
+
+.section-principal-img-pelo{
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-salvador{
+    font-weight: bold;
+    font-size:60px;
+    color:white;
+}
+
+.main{
+    margin-bottom: 10px;
+}
+
+.h2-curiosidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #755B3E;
+}
+.section-cards-curiosidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    border: 2px solid #755B3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+     margin:10px;
+     margin-bottom: 20px;
+    box-shadow: 0px 0px 11px 2px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    height: 575px;
+}
+
+.img-cards{
+    border: 1px solid white;
+    max-width: 10%;
+    margin:5px;
+}
+
+.h3-titulos{
+    padding: 10px;
+    color: #755B3E;
+}
+
+.description{
+    border: 1px solid #755B3E;
+    color:#755B3E;
+    height:  80%;
+    width: 100%;
+    padding: 15px;
+    height: 190px;
+}
+
+.button-cards{
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    color:#755B3E;
+    border: 1px solid #755B3E;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-cards:hover{
+   background-color:#755b3e3f;
+}
+
+.section-video{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.h2-video{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+color: #755B3E;
+}
+
+.video-iframe{
+    border: 2px solid #755B3E;
+    border-radius:10px;
+    max-width: 100%;
+    box-shadow: 0px 0px 11px 2px rgb(0 0 0 / 25%);
+    margin-bottom: 20px;
+}
+
+footer{
+    border: 1px solid #755B3E;
+}
+
+.footer-content{
+    background-color: aliceblue;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content:space-evenly;
+    align-items:center;
+    height: 100px;
+}
+
+.p-footer{
+    color: #755B3E;
+}
+
+.nav-footer{
+    width: 120px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.img-footer{
+    width: 50px;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+
+}
+
+@media (min-width: 1280px){
+
+    .section-cards-curiosidades{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .cards{
+        max-width: 30%;
+        height: 520px;
+    }
+    
+    .img-cards{
+        max-width: 30%;
+    }
+
+    .imgMeio{
+        max-width: 270px;
+        height: 192px;
+    }
+
+
+    .video-iframe{
+        width: 1000px;
+        height: 600px;
+    }
+}
