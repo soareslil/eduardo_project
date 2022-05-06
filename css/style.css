@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* importando fonte externa do google */
 
 *{
     padding:0;
@@ -6,20 +7,24 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+/* asterisco significa aplicar para todo o corpo de html todo o conteudo */
 
 body{
     background-color: aliceblue;
 }
+/* no body esta aplicando uma cor de fundo para todo o corpo do html */
 
 .header{
     border: 1px solid #755B3E;
     display:flex;
     justify-content:space-around;
 }
+/* cabecalho aplicando borda com pixel solidez e cor, deixando o display flexivel e justificando criando espacos ao redor */
 
 .img-header{
     max-width: 100px;
 }
+/* definindo uma largura maxima de 100 pixels para a imagem logo do header */
 
 .nav-header{
     width: 60%;
@@ -28,6 +33,7 @@ body{
    justify-content: space-between;
    color: #755B3E;
 }
+/* definindo largura de 60%, displat flexivel, direcao em linha, conteudo espacado entre os elementos, coloracao especifica */
 
 .nav-header a{
 padding: 10px;
@@ -35,6 +41,7 @@ display: flex;
 justify-content: center;
 align-self: center;
 }
+/* definido espacamento interno, display flexivel, conteudo justificado ao centro, alinhamento de self ao centro */
 
 .section-principal-img-pelo{
     background-image: url('../img/banner.jpg');
@@ -47,16 +54,21 @@ align-self: center;
     justify-content: center;
     align-items: center;
 }
+/* definido imagem de fundo de acordo com a url que direciona a pasta de imagens,
+ tirando a repeticao da imagem, posicionamento da imagem ao centro e cobrindo toda a tag na qual esta inserida
+ altura de 500px, display flexivel, direcao em linha, conteudo justificado ao centro, e alinhado ao centro */
 
-.h1-salvador{
+.h1-principal{
     font-weight: bold;
     font-size:60px;
     color:white;
 }
+/* definido peso de fonte negrito, tamanho de fonte 60px, coloracao branca */
 
 .main{
     margin-bottom: 10px;
 }
+/* definido margim embaixo da tag main de 10px */
 
 .h2-curiosidades{
     display: flex;
@@ -66,12 +78,16 @@ align-self: center;
     height: 100px;
     color: #755B3E;
 }
+/* definido display flexivel, conteudo direcionado em linha, conteudo justificado e em si alinhado ao centro, altura de 10px cor especifica */
+
 .section-cards-curiosidades{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* definido display flexivel, direcao  em coluna, um abaixo do outro, conteudo justificado ao centro, e em si ao centro */
 
 .cards{
     border: 2px solid #755B3E;
@@ -86,17 +102,25 @@ align-self: center;
     border-radius: 10px;
     height: 575px;
 }
+/* definido borda de 2px solida cor especifica, display flexivel, direcao  em coluna, 
+um abaixo do outro, conteudo justificado ao centro, e em si ao centro
+espacamento interno de 15px, margin espacamento externo de 10px, espacamento abaixo de 20px, 
+caixa de sombra na cor preta, arredondamento de borda de 10px, altura de 757px  */
 
 .img-cards{
     border: 1px solid white;
     max-width: 10%;
     margin:5px;
 }
+/* definido borda solida de 1px na cor branca
+altura maxima das imagens de 10%
+margin espacamento externo de 5px */
 
 .h3-titulos{
     padding: 10px;
     color: #755B3E;
 }
+/* definido espacamento interno de 10px com a cor especifica */
 
 .description{
     border: 1px solid #755B3E;
@@ -106,6 +130,9 @@ align-self: center;
     padding: 15px;
     height: 190px;
 }
+/* definido borda de 1px do tipo solida, cor especifica 
+cor especifica de letra, altura de 80%, largura de 100% ,
+espacamento interno de 15px, altura de 190px na descricao do card */
 
 .button-cards{
     margin-top: 15px;
@@ -116,36 +143,19 @@ align-self: center;
     border-radius: 10px;
     cursor: pointer;
 }
+/* botao com margin superior de 15px, altura de 40px,
+largura de 100px, coloracao especifica, borda de 1x do tipo solida com cor especifica,
+arredondamento de borda de 10px, cursor do tipo pointer, ou seja com a maozinha */
 
 .button-cards:hover{
    background-color:#755b3e3f;
 }
-
-.section-video{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.h2-video{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 20px;
-color: #755B3E;
-}
-
-.video-iframe{
-    border: 2px solid #755B3E;
-    border-radius:10px;
-    max-width: 100%;
-    box-shadow: 0px 0px 11px 2px rgb(0 0 0 / 25%);
-    margin-bottom: 20px;
-}
+/* propriedade do tipo hover, ou seja ao passar o mouse por cima do botao inserido no card, a cor muda  */
 
 footer{
     border: 1px solid #755B3E;
 }
+/* rodape com borda do tipo solida com largura de 1px com cor especifica */
 
 .footer-content{
     background-color: aliceblue;
@@ -156,50 +166,44 @@ footer{
     align-items:center;
     height: 100px;
 }
+secao de conteudo do rodape com cor de fundo especifica
+/* display do tipo flexivel
+margin esquerda e direita automatica
+conteudo justificado com espaco eventual
+conteudo alinhado em si ao centro
+largura de 100px */
 
 .p-footer{
     color: #755B3E;
 }
+/* estilo do paragrafo contido no rodape
+cor especifica */
 
-.nav-footer{
-    width: 120px;
-    display: flex;
-    justify-content:space-between;
-}
-
-
-.img-footer{
-    width: 50px;
-    display: flex;
-    align-content: center;
-    justify-content:center;
-
-}
 
 @media (min-width: 1280px){
+    /* media querie para desktop last que tenha no minimo a largura de 1280px e desta forma o que for necessario se ajusta*/
 
     .section-cards-curiosidades{
         flex-direction: row;
         gap: 30px;
     }
+    /* modificando apenas a direcao para o do tipo linha, ou seja, os cards ficam um do lado do outro,com espacamento de 30px entre si */
 
     .cards{
         max-width: 30%;
         height: 520px;
     }
+    /* deixando o card com largura maxima de 30% e com altura de 520px */
     
     .img-cards{
         max-width: 30%;
     }
+    /* deixando as imagens contida no card com largura maxima de 30% */
 
     .imgMeio{
         max-width: 270px;
         height: 192px;
     }
+    /* imagem do meio com de 270px e altura de 192px */
 
-
-    .video-iframe{
-        width: 1000px;
-        height: 600px;
-    }
 }

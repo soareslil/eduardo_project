@@ -1,74 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- conectando o css externo -->
     <title>Book Store</title>
-</head>
-<body>
+    <!-- titulo da pagina -->
+  </head>
+  <body>
     <header class="header">
-        <img class="img-header" src="img/logo-livraria.png"/>
-        <nav class="nav-header">
-            <a>Home</a>
-            <a>Livros</a>
-            <a>Contato</a>
-        </nav>
+      <!-- tag header cabeçalho -->
+      <img class="img-header" src="img/logo-livraria.png" />
+      <!-- tag de imagem importando da pasta imagens -->
+      <nav class="nav-header">
+        <!-- tag nav de navegaçao para melhor semantica de links externos -->
+        <a>Home</a>
+        <!-- tag a para linkar os sites externos -->
+        <a>Livros</a>
+        <a>Contato</a>
+      </nav>
     </header>
     <section class="section-principal-img-pelo">
-        <h1 class="h1-salvador">Book Read: book store</h1>
+      <!-- tag section para definir uma seção especifica de conteudos -->
+      <h1 class="h1-principal">Book Read: book store</h1>
+      <!-- h1 titulo principal -->
     </section>
 
-        <main class="main">
-            <h2 class="h2-curiosidades">Conheça os livros</h2>
+    <main class="main">
+      <!-- tag main significa conteudo principal mais importante -->
+      <h2 class="h2-curiosidades">Conheça os livros</h2>
+      <!-- tag h2 titulo de segunda maior relevancia -->
 
-            <section class="section-cards-curiosidades">
-                <div class="cards">
-                    <img class="img-cards" src="img/livro1.jpg" />
-                    <h3 class="h3-titulos">Harry Potter</h3>
-                    <p class="description">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio."
-                    </p>
-                    <form target="blank" action="https://www.amazon.com.br/Harry-Potter-Pedra-Filosofal-Rowling/dp/8532530788/ref=sr_1_2?crid=3QENI07DY6Z7J&keywords=harry+potter&qid=1651793499&s=books&sprefix=harry%2Cstripbooks%2C290&sr=1-2">
-                     <button class="button-cards" type="submit">
-                        Saiba mais
-                     </button>
-                    </form>
-                </div>
+      <section class="section-cards-curiosidades">
+        <div class="cards">
+          <!-- div tag de bloco -->
+          <img class="img-cards" src="img/livro1.jpg" />
+          <h3 class="h3-titulos">Harry Potter</h3>
+          <!-- tag h3 de titulo de terceira importancia -->
+          <p class="description">
+            <!-- tag p de paragrafo -->
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+            odio."
+          </p>
+          <form
+            target="blank"
+            action="https://www.amazon.com.br/Harry-Potter-Pedra-Filosofal-Rowling/dp/8532530788/ref=sr_1_2?crid=3QENI07DY6Z7J&keywords=harry+potter&qid=1651793499&s=books&sprefix=harry%2Cstripbooks%2C290&sr=1-2"
+          >
+            <!-- tag form para criar a semantica e estrutura com as funcionalidades de formulario -->
+            <button class="button-cards" type="submit">
+              <!-- tag de botao -->
+              Saiba mais
+            </button>
+          </form>
+        </div>
 
-                <div class="cards">
-                    <img class="img-cards imgMeio" src="img/livro2.jpg" />
-                    <h3 class="h3-titulos">Percy Jackson</h3>
-                    <p class="description">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.."
-                    </p>
-                    <form target="blank" action="https://www.amazon.com.br/Mar-Monstros-S%C3%A9rie-Jackson-Olimpianos/dp/8580575400/ref=sr_1_4?crid=VIHTN4E9AZY0&keywords=percy+jackson&qid=1651793471&s=books&sprefix=percy%2Cstripbooks%2C255&sr=1-4">
-                        <button class="button-cards" type="submit">
-                           Saiba mais
-                        </button>
-                    </form>
-                </div>
+        <div class="cards">
+          <img class="img-cards imgMeio" src="img/livro2.jpg" />
+          <h3 class="h3-titulos">Percy Jackson</h3>
+          <p class="description">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+            odio.."
+          </p>
+          <form
+            target="blank"
+            action="https://www.amazon.com.br/Mar-Monstros-S%C3%A9rie-Jackson-Olimpianos/dp/8580575400/ref=sr_1_4?crid=VIHTN4E9AZY0&keywords=percy+jackson&qid=1651793471&s=books&sprefix=percy%2Cstripbooks%2C255&sr=1-4"
+          >
+            <button class="button-cards" type="submit">Saiba mais</button>
+          </form>
+        </div>
 
-                <div class="cards">
-                    <img class="img-cards" src="img/livro3.jpg" />
-                    <h3 class="h3-titulos">Narnia</h3>
-                    <p class="description">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.."
-                    </p>
-                    <form target="blank" action="https://www.amazon.com.br/As-Cr%C3%B4nicas-N%C3%A1rnia-Brochura-Lewis/dp/857827069X/ref=sr_1_1?keywords=narnia&qid=1651793431&sr=8-1">
-                        <button class="button-cards" type="submit">
-                           Saiba mais
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
+        <div class="cards">
+          <img class="img-cards" src="img/livro3.jpg" />
+          <h3 class="h3-titulos">Narnia</h3>
+          <p class="description">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+            nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue
+            ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+            odio.."
+          </p>
+          <form
+            target="blank"
+            action="https://www.amazon.com.br/As-Cr%C3%B4nicas-N%C3%A1rnia-Brochura-Lewis/dp/857827069X/ref=sr_1_1?keywords=narnia&qid=1651793431&sr=8-1"
+          >
+            <button class="button-cards" type="submit">Saiba mais</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-        <footer class="footer">
-            <section class="footer-content">
-                <p class="p-footer">Made by Bruno Eduardo</p>
-            </section>
-        </footer>
-</body>
+    <footer class="footer">
+      <!-- tag footer representa o rodape -->
+      <section class="footer-content">
+        <p class="p-footer">Made by Bruno Eduardo</p>
+      </section>
+    </footer>
+  </body>
 </html>
